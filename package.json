@@ -1,0 +1,34 @@
+{
+  "name": "blockcypher-unofficial",
+  "version": "0.0.1",
+  "description": "wrapper around blockcypher's api. Conforms to standards for bitcoin related json objects",
+  "keywords": [
+    "blockchain",
+    "blockcypher"
+  ],
+  "repository": {
+    "url": "",
+    "type": "git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "request": "^2.58.0"
+  },
+  "homepage": "https://github.com/cryptocoinjs/bigi",
+  "_id": "blockcypher-unofficial@0.0.1",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "andrewmalta",
+    "email": "andrew.malta@yale.edu"
+  },
+  "maintainers": [
+    {
+      "name": "Andrew Malta",
+      "email": "andrew.malta@yale.edu"
+    },
+    {
+      "name": "Howard Wu",
+      "email": "howardWu@berkely.edu"
+    }
+  ]
+}
