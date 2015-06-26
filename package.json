@@ -17,20 +17,22 @@
     "request": "^2.58.0"
   },
   "homepage": "https://github.com/andrewmalta13/blockcypher-unoffical",
-  "_id": "blockcypher-unofficial@0.0.1",
   "_npmVersion": "1.4.3",
   "_npmUser": {
     "name": "andrewmalta",
     "email": "andrew.malta@yale.edu"
   },
   "maintainers": [
-    {
-      "name": "Andrew Malta",
-      "email": "andrew.malta@yale.edu"
-    },
-    {
-      "name": "Howard Wu",
-      "email": "howardWu@berkely.edu"
-    }
-  ]
+    "Andrew Malta <andrew.malta@yale.edu>",
+    "Howard Wu <howardWu@berkely.edu>"
+  ],
+  "bugs": {
+    "url": "https://github.com/andrewmalta13/blockcypher-unoffical/issues"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Malta <andrew.malta@yale.edu>",
+  "license": "ISC"
 }

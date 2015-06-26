@@ -2,4 +2,6 @@
 
 ## Installation
 
-you can install the npm moudle <a href="">here</a>
+you can install the npm module <a href="https://www.npmjs.com/package/blockcypher-unofficial">here</a>
+
+
