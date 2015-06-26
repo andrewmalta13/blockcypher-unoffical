@@ -13,6 +13,7 @@ function calculateFee(inputs, outputs){
   return(totalIn - totalOut);
 }
 
+//returns the correct url endpoint based on network
 function getBaseURL(network){
   var baseURL;
   if (network === "testnet"){
@@ -23,6 +24,7 @@ function getBaseURL(network){
   return baseURL;
 }
 
+//abstracted json get request caller method.
 function getFromURL(url, callback){
   request.get(url, function (err, response, body) {
     if (err) {
@@ -39,6 +41,7 @@ function getFromURL(url, callback){
   });
 }
 
+//returns wallet info in standard format to callback.
 function getWalletInfo(options, callback){
   var response = {};
   var url = getBaseURL(options.network) + "/addrs/" + options.address;
@@ -56,6 +59,7 @@ function getWalletInfo(options, callback){
   });
 }
 
+//returns unspents for options.address in standard format to callback.
 function getUnspentOutputs(options, callback){
   var url = getBaseURL(options.network) + "/addrs/" + options.address + "?unspentOnly=true";
   var response = {"unspents" : []};
@@ -79,6 +83,7 @@ function getUnspentOutputs(options, callback){
   });
 }
 
+//returns transaction information for options.txid in standard format to callback.
 function getTransaction(options, callback){
   var url = getBaseURL(options.network) + "/txs/" + options.txid;
   var response = {};
@@ -114,7 +119,7 @@ function getTransaction(options, callback){
   });
 }
 
- 
+//pushes options.transaction in hex to network and returns the resultant txid to callback.
 function pushTransaction(options, callback){
   var postBody = {"tx": options.transaction};
   var url = getBaseURL(options.network) + "/txs/push";
@@ -140,7 +145,6 @@ function pushTransaction(options, callback){
       }
   });
 }
-
 
 module.exports.getWalletInfo = getWalletInfo;
 module.exports.getUnspentOutputs = getUnspentOutputs;
