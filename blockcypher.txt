@@ -1,3 +1,8 @@
+//Andrew Malta 2015
+//this is a small list of crucial api enpoints supported by blockcypher and their resultand inputs/outputs.
+//this data being returned is going to be converted to a standard derived from bitoind's standards.
+
+
 Blockcypher: No npm module, have to use url endpoints.
 
 Note:

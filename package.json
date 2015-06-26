@@ -1,10 +1,12 @@
 {
   "name": "blockcypher-unofficial",
   "version": "0.0.1",
-  "description": "wrapper around blockcypher's api. Conforms to standards for bitcoin related json objects",
+  "description": "wrapper around blockcypher's api. Conforms to a standard derived from bitcoind",
   "keywords": [
     "blockchain",
-    "blockcypher"
+    "blockcypher",
+    "standard",
+    "api"
   ],
   "repository": {
     "url": "https://github.com/andrewmalta13/blockcypher-unoffical",
@@ -14,7 +16,7 @@
   "dependencies": {
     "request": "^2.58.0"
   },
-  "homepage": "https://github.com/cryptocoinjs/bigi",
+  "homepage": "https://github.com/andrewmalta13/blockcypher-unoffical",
   "_id": "blockcypher-unofficial@0.0.1",
   "_npmVersion": "1.4.3",
   "_npmUser": {
