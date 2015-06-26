@@ -7,7 +7,7 @@
     "blockcypher"
   ],
   "repository": {
-    "url": "",
+    "url": "https://github.com/andrewmalta13/blockcypher-unoffical",
     "type": "git"
   },
   "main": "./index.js",
