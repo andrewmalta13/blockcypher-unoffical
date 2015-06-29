@@ -4,24 +4,31 @@
 
 you can install the npm module <a href="https://www.npmjs.com/package/blockcypher-unofficial">here</a>
 
-for a guide to the standard that this module follows please check out <a href="https://github.com/blockai/abstract-common-blockchain/blob/master/README.md">here</a>
+```
+npm install blockcypher-unofficial
+```
 
+<a href="https://github.com/blockai/abstract-common-blockchain/edit/master/README.md">See abstract-common-blockchain for API</a>
 
-Also check out the comments above each function in lib if you want a deeper understanding of what each function expects and returns.
+## Convention
 
-
-here is a quick example call to each function in the library
+Standard convention is described fully in the 
+```
+types.json
+``` file.
 
 
 ##Usage
-```javascript
-//simply require the npm module at the top of the file you are using it on.
-var blockcypher = require('blockcypher-unoffical');
 
+simply require the npm module at the top of the file
+```javascript
+var blockcypher = require('blockcypher-unoffical');
 ```
+
+Also check out the comments above each function in lib if you want a deeper understanding of what each function expects and returns.
 
 ## Addresses
-```
+```javascript
 //for more information about the arguments, check the comment stubs above each function in addresses.js in lib.
 
 blockcypher({network: "mainnet"}).Addresses.Summary(addresses, callback);
@@ -71,4 +78,9 @@ blockcypher({network: "testnet"}).Transactions.Status(txids, callback);
 blockcypher({network: "mainnet"}).Transactions.Propogate(transactionHex, callback);
 blockcypher({network: "testnet"}).Transactions.Propogate(transactionHex, callback);
 ```
+
+
+## Maintainers
+* Andrew Malta: andrew.malta@yale.edu
+* Howard Wu: howardwu@berkeley.edu
 
