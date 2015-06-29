@@ -14,9 +14,11 @@ here is a quick example call to each function in the library
 
 
 ##Usage
-
+```javascript
 //simply require the npm module at the top of the file you are using it on.
 var blockcypher = require('blockcypher-unoffical');
+
+```
 
 ## Addresses
 ```
@@ -33,7 +35,7 @@ blockcypher({network: "testnet"}).Addresses.Transactions(addresses, callback);
 ```
 
 ## Blocks
-```
+```javascript
 //for more information about the arguments, check the comment stubs above each function in blocks.js in lib.
 
 blockcypher({network: "mainnet"}).Blocks.Get(blockids, callback);
@@ -51,7 +53,7 @@ blockcypher({network: "testnet"}).Blocks.Transactions(blockids, callback);
 
 ## Transactions
 
-```
+```javascript
 //for more information about the arguments, check the comment stubs above each function in transactions.js in lib.
 
 blockcypher({network: "mainnet"}).Transactions.Get(txids, callback);
