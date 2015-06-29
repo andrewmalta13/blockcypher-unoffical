@@ -12,10 +12,7 @@ npm install blockcypher-unofficial
 
 ## Convention
 
-Standard convention is described fully in the 
-```
-types.json
-``` file.
+Standard convention is described fully in the types.json file.
 
 
 ##Usage
