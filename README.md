@@ -13,9 +13,13 @@ Also check out the comments above each function in lib if you want a deeper unde
 here is a quick example call to each function in the library
 
 
+##Usage
+
+//simply require the npm module at the top of the file you are using it on.
 var blockcypher = require('blockcypher-unoffical');
 
 ## Addresses
+//for more information about the arguments, check the comment stubs above each function in addresses.js in lib.
 
 blockcypher({network: "mainnet"}).Addresses.Summary(addresses, callback);
 blockcypher({network: "testnet"}).Addresses.Summary(addresses, callback);
@@ -27,6 +31,7 @@ blockcypher({network: "mainnet"}).Addresses.Transactions(addresses, callback);
 blockcypher({network: "testnet"}).Addresses.Transactions(addresses, callback);
 
 ## Blocks
+//for more information about the arguments, check the comment stubs above each function in blocks.js in lib.
 
 blockcypher({network: "mainnet"}).Blocks.Get(blockids, callback);
 blockcypher({network: "testnet"}).Blocks.Get(blockids, callback);
@@ -41,6 +46,7 @@ blockcypher({network: "mainnet"}).Blocks.Transactions(blockids, callback);
 blockcypher({network: "testnet"}).Blocks.Transactions(blockids, callback);
 
 ## Transactions
+//for more information about the arguments, check the comment stubs above each function in blocks.js in lib.
 
 blockcypher({network: "mainnet"}).Transactions.Get(txids, callback);
 blockcypher({network: "testnet"}).Transactions.Get(txids, callback);
