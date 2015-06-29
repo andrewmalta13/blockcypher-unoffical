@@ -2,9 +2,9 @@
 
 ## Installation
 
-you can install the npm module <a href="https:www.npmjs.com/package/blockcypher-unofficial">here</a>
+you can install the npm module <a href="https://www.npmjs.com/package/blockcypher-unofficial">here</a>
 
-for a guide to the standard that this module follows please check out <a href="https:github.com/blockai/abstract-common-blockchain/blob/master/README.md">here</a>
+for a guide to the standard that this module follows please check out <a href="https://github.com/blockai/abstract-common-blockchain/blob/master/README.md">here</a>
 
 
 Also check out the comments above each function in lib if you want a deeper understanding of what each function expects and returns.
@@ -46,7 +46,7 @@ blockcypher({network: "mainnet"}).Blocks.Transactions(blockids, callback);
 blockcypher({network: "testnet"}).Blocks.Transactions(blockids, callback);
 
 ## Transactions
-//for more information about the arguments, check the comment stubs above each function in blocks.js in lib.
+//for more information about the arguments, check the comment stubs above each function in transactions.js in lib.
 
 blockcypher({network: "mainnet"}).Transactions.Get(txids, callback);
 blockcypher({network: "testnet"}).Transactions.Get(txids, callback);
