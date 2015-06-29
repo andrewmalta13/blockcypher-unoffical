@@ -4,15 +4,20 @@ var Blocks = require('./lib/blocks.js');
 
 
 //config variables for the module. (only network for now)
-var config = {};
+//"testnet" for testnet and anything else for mainnet
 
 function BlockCypher(opts) {
   if (!(this instanceof BlockCypher)) return new BlockCypher(opts);
-  config.network = opts.network;
+
+  if(!opts.network){
+    console.log("please specify a blockchain. (defaults to mainnet)");
+  }
+
+  BlockCypher.prototype.Addresses = Addresses(opts);
+  BlockCypher.prototype.Transactions = Transactions(opts);
+  BlockCypher.prototype.Blocks = Blocks(opts);
 }
 
-BlockCypher.prototype.Addresses = Addresses(config);
-BlockCypher.prototype.Transactions = Transactions(config);
-BlockCypher.prototype.Blocks = Blocks(config);
+
 
 module.exports = BlockCypher;
