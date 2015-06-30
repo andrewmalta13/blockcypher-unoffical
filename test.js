@@ -34,10 +34,10 @@ function test(err, resp){
 
 
 //api({network: "mainnet"}).Transactions.Get({txids: ["779b25c49817a7ab879c8a02678b2494ef60723dc93305240b4da37ba1927351"]}, test);
-//api({network: "testnet"}).Transactions.Get({txids: ["940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5"]}, test);
+api({network: "testnet"}).Transactions.Get({txids: ["03af5bf0b3fe25db04b684ab41bea8cdd127e57822602b8545beaf06685967c8"]}, test);
 
-api({network: "mainnet"}).Transactions.Latest(test);
-api({network: "testnet"}).Transactions.Latest(test);
+// api({network: "mainnet"}).Transactions.Latest(test);
+// api({network: "testnet"}).Transactions.Latest(test);
 
 
  // api({network: "mainnet"}).Transactions.Outputs({"outputs" : [{txid: "940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5", vout: 0},
