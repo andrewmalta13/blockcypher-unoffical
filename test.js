@@ -24,8 +24,8 @@ function test(err, resp){
 //api({network: "mainnet"}).Blocks.Get({"blockids": ["00000000000000000216a936ebc1962e319a51bab8d3eae69335ac940284491d"]}, test);
 //api({network: "testnet"}).Blocks.Get({"blockids": ["00000000005df195c304bc89652377f3ef17ed8c71c636e88adecb0bbf20f873"]}, test);
 
-//api({network: "mainnet"}).Blocks.Latest(test);
-//api({network: "testnet"}).Blocks.Latest(test);
+// api({network: "mainnet"}).Blocks.Latest(test);
+// api({network: "testnet"}).Blocks.Latest(test);
 
 //api({network: "testnet"}).Blocks.Propogate("askfhkajshfdk", test);
 
@@ -36,8 +36,8 @@ function test(err, resp){
 //api({network: "mainnet"}).Transactions.Get({txids: ["779b25c49817a7ab879c8a02678b2494ef60723dc93305240b4da37ba1927351"]}, test);
 //api({network: "testnet"}).Transactions.Get({txids: ["940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5"]}, test);
 
-//api({network: "mainnet"}).Transactions.Latest(test);
-//api({network: "testnet"}).Transactions.Latest(test);
+api({network: "mainnet"}).Transactions.Latest(test);
+api({network: "testnet"}).Transactions.Latest(test);
 
 
  // api({network: "mainnet"}).Transactions.Outputs({"outputs" : [{txid: "940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5", vout: 0},

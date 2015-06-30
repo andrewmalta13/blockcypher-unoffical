@@ -15,7 +15,7 @@ npm install blockcypher-unofficial
 Standard convention is described fully in the types.json file.
 
 
-##Usage
+## Usage
 
 simply require the npm module at the top of the file
 ```javascript
