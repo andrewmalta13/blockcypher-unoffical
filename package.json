@@ -1,6 +1,6 @@
 {
   "name": "blockcypher-unofficial",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "wrapper around blockcypher's api. Conforms to a standard derived from bitcoind",
   "keywords": [
     "blockchain",
