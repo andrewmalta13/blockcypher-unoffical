@@ -22,7 +22,7 @@ function test(err, resp){
 
 
 //api({network: "mainnet"}).Blocks.Get({"blockids": ["00000000000000000216a936ebc1962e319a51bab8d3eae69335ac940284491d"]}, test);
-//api({network: "testnet"}).Blocks.Get({"blockids": ["00000000005df195c304bc89652377f3ef17ed8c71c636e88adecb0bbf20f873"]}, test);
+//api({network: "testnet"}).Blocks.Get(["00000000000d8087a4cea66ad90d890ed05c9059a0323d20463d0635aff6056f"], test);
 
 // api({network: "mainnet"}).Blocks.Latest(test);
 // api({network: "testnet"}).Blocks.Latest(test);
@@ -30,7 +30,7 @@ function test(err, resp){
 //api({network: "testnet"}).Blocks.Propagate("askfhkajshfdk", test);
 
 //api({network: "mainnet"}).Blocks.Transactions({"blockids": ["00000000000000000216a936ebc1962e319a51bab8d3eae69335ac940284491d"]}, test);
-//api({network: "testnet"}).Blocks.Transactions({"blockids": ["00000000005df195c304bc89652377f3ef17ed8c71c636e88adecb0bbf20f873"]}, test);
+//api({network: "testnet"}).Blocks.Transactions(["00000000000d8087a4cea66ad90d890ed05c9059a0323d20463d0635aff6056f"], test);
 
 
 //api({network: "mainnet"}).Transactions.Get({txids: ["779b25c49817a7ab879c8a02678b2494ef60723dc93305240b4da37ba1927351"]}, test);

@@ -1,4 +1,5 @@
-var commonBlockchainTests = require('abstract-common-blockchain/tests');
+// var commonBlockchainTests = require('abstract-common-blockchain/tests');
+var commonBlockchainTests = require('../../abstract-common-blockchain/tests');
 var test = require('tape');
 var ChainAPI = require('../');
 
