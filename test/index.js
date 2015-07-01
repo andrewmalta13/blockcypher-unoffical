@@ -1,18 +1,36 @@
-var commonBlockchainTests = require('abstract-common-blockchain/tests');
-var test = require('tape');
-var ChainAPI = require('../');
+var testnetCommonBlockchainTests = require('abstract-common-blockchain/tests/testnet');
+var mainnetCommonBlockchainTests = require('abstract-common-blockchain/tests/mainnet');
 
-var commonBlockchain = ChainAPI({
+var test = require('tape');
+var blockCypherApi = require('../');
+
+var testnetCommonBlockchain = blockCypherApi({
   network: "testnet"
 });
 
-var common = {
+var mainnetCommonBlockchain = blockCypherApi({
+  network: "bitcoin"
+});
+
+
+var testnetCommon = {
   setup: function(t, cb) {
-    cb(null, commonBlockchain);
+    cb(null, testnetCommonBlockchain);
   },
-  teardown: function(t, commonBlockchain, cb) {
+  teardown: function(t, testnetCommonBlockchain, cb) {
     cb();
   }
 }
 
-commonBlockchainTests(test, common);
+var mainnetCommon = {
+  setup: function(t, cb) {
+    cb(null, mainnetCommonBlockchain);
+  },
+  teardown: function(t, mainnetCommonBlockchain, cb) {
+    cb();
+  }
+}
+
+
+mainnetCommonBlockchainTests(test, mainnetCommon);
+testnetCommonBlockchainTests(test, testnetCommon);
