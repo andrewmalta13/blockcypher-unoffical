@@ -8,7 +8,7 @@ you can install the npm module <a href="https://www.npmjs.com/package/blockcyphe
 npm install blockcypher-unofficial
 ```
 
-<a href="https://github.com/blockai/abstract-common-blockchain/edit/master/README.md">See abstract-common-blockchain for API</a>
+<a href="https://github.com/blockai/abstract-common-blockchain">See abstract-common-blockchain for API</a>
 
 ## Convention
 
