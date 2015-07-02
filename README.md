@@ -23,10 +23,12 @@ var blockcypher = require('blockcypher-unofficial');
 you may specify the options you wish to make a call like so:
 
 ```javascript
-var mainnetOpts = {network: "bitcoin"};
+var client = blockcypher({
+  network: "testnet"
+});
 
 //example call
-blockcypher(mainnetOpts).Addresses.Unspents(["address 1", "address 2", ...], callback);
+client.Addresses.Unspents(["address 1", "address 2", ...], callback);
 ```
 
 alternatively you can check out the comments above each function in lib if you wish to understand what each function expects and returns.
