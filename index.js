@@ -8,6 +8,10 @@ function BlockCypher(opts) {
     console.log("please specify a blockchain. (defaults to mainnet)");
   }
 
+  if(!opts.key){
+    console.log("no key specified, your requests will be limited by blockcypher");
+  }
+
   return {
     Addresses: require('./lib/addresses.js')(opts),
     Blocks: require('./lib/blocks.js')(opts),
