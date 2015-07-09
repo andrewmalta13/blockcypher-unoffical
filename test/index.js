@@ -1,5 +1,5 @@
-var testnetCommonBlockchainTests = require('abstract-common-blockchain/tests/testnet');
-var mainnetCommonBlockchainTests = require('abstract-common-blockchain/tests/mainnet');
+var testnetCommonBlockchainTests = require('../../abstract-common-blockchain/tests/testnet');
+var mainnetCommonBlockchainTests = require('../../abstract-common-blockchain/tests/mainnet');
 
 var test = require('tape');
 var blockCypherApi = require('../');
