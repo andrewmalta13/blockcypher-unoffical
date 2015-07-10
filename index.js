@@ -11,6 +11,8 @@ function BlockCypher(opts) {
   if(!opts.key){
     console.log("no key specified, your requests will be limited by blockcypher");
   }
+  
+  opts.utility = require('./lib/utility.js')(opts.inBrowser);
 
   return {
     Addresses: require('./lib/addresses.js')(opts),
