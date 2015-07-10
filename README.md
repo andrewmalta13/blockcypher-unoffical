@@ -24,13 +24,6 @@ simply require the npm module at the top of the file
 ```javascript
 var blockcypher = require('blockcypher-unofficial');
 ```
-you may specify the options you wish to make a call like so:
-
-```javascript
-var client = blockcypher({
-  network: "testnet"
-});
-
 ##Networks
 This adapter supports testnet, mainnet, and blockcyphers testnet. You may access each network by setting the network option to 
 one of these options:
@@ -38,6 +31,13 @@ one of these options:
 testnet3: "testnet"
 Blockcypher's testnet: "blockcypher-testnet"
 mainnet: (anything but above two)
+
+you may specify the options you wish to make a call like so:
+
+```javascript
+var client = blockcypher({
+  network: "testnet"
+});
 
 //example call
 client.Addresses.Unspents(["address 1", "address 2", ...], callback);
