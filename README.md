@@ -31,6 +31,14 @@ var client = blockcypher({
   network: "testnet"
 });
 
+##Networks
+This adapter supports testnet, mainnet, and blockcyphers testnet. You may access each network by setting the network option to 
+one of these options:
+
+testnet3: "testnet"
+Blockcypher's testnet: "blockcypher-testnet"
+mainnet: (anything but above two)
+
 //example call
 client.Addresses.Unspents(["address 1", "address 2", ...], callback);
 ```
