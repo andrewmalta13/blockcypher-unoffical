@@ -28,9 +28,9 @@ var blockcypher = require('blockcypher-unofficial');
 This adapter supports testnet, mainnet, and blockcyphers testnet. You may access each network by setting the network option to 
 one of these options:
 
-testnet3: "testnet"
-Blockcypher's testnet: "blockcypher-testnet"
-mainnet: (anything but above two)
+testnet3: "testnet",
+Blockcypher's testnet: "blockcypher-testnet",
+mainnet: (anything but other two)
 
 you may specify the options you wish to make a call like so:
 
