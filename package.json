@@ -1,6 +1,6 @@
 {
   "name": "blockcypher-unofficial",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "description": "wrapper around blockcypher's api. Conforms to a standard derived from bitcoind and common-blockchain",
   "scripts": {
     "test": "source .env && node test/index.js"
