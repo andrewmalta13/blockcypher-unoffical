@@ -19,6 +19,7 @@
   "dependencies": {
     "abstract-common-blockchain": "^0.1.0",
     "async": "^1.3.0",
+    "bitcoin-tx-hex-to-json": "0.0.1",
     "browser-request": "^0.3.3",
     "request": "^2.58.0",
     "tape": "^4.0.0"
