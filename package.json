@@ -1,6 +1,6 @@
 {
   "name": "blockcypher-unofficial",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "wrapper around blockcypher's api. Conforms to a standard derived from bitcoind and common-blockchain",
   "scripts": {
     "test": "source .env && node test/index.js"
@@ -17,9 +17,9 @@
   },
   "main": "./index.js",
   "dependencies": {
-    "abstract-common-blockchain": "^0.1.0",
+    "abstract-common-blockchain": "^0.2.0",
     "async": "^1.3.0",
-    "bitcoin-tx-hex-to-json": "0.0.1",
+    "bitcoin-tx-hex-to-json": "0.0.3",
     "browser-request": "^0.3.3",
     "request": "^2.58.0",
     "tape": "^4.0.0"
